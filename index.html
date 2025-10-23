@@ -3,41 +3,105 @@
 
 <head>
      <meta charset="UTF-8">
-     <title>noobfaq</title>
-     <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>NoobFAQ MessageBoard</title>
+
+     <style>
+          /* ====== ESTILO GERAL ====== */
+          body {
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               color: #111;
+               background-color: #f5f5f5;
+               max-width: 900px;
+               margin: 2rem auto;
+               padding: 2rem;
+               line-height: 1.6;
+          }
+
+          h1 {
+               text-align: center;
+               color: #000;
+               font-weight: 900;
+               letter-spacing: 1px;
+               margin-bottom: 1.5rem;
+          }
+
+          p {
+               font-size: 1rem;
+               margin-bottom: 1rem;
+          }
+
+          ul {
+               list-style: disc;
+               margin: 1rem 0 1rem 2rem;
+               padding: 0;
+          }
+
+          li {
+               margin-bottom: 0.5rem;
+          }
+
+          strong,
+          em {
+               color: #000;
+          }
+
+          #comments {
+               margin-top: 3rem;
+               padding-top: 1rem;
+               border-top: 2px solid #ccc;
+          }
+
+          footer {
+               text-align: center;
+               font-size: 0.9rem;
+               color: #555;
+               margin-top: 3rem;
+          }
+
+          a {
+               color: #000;
+               text-decoration: none;
+               font-weight: bold;
+          }
+
+          a:hover {
+               text-decoration: underline;
+          }
+     </style>
 </head>
 
 <body>
      <h1>NoobFAQ MessageBoard</h1>
 
-     <p>NoobFAQ é um espaço colaborativo para estudantes, freelancers e criadores compartilharem experiências, fazerem
-          perguntas e darem feedback. Aqui, ninguém precisa saber tudo — o importante é aprender, trocar ideias e ajudar
-          a comunidade a crescer.</p>
+     <p><strong>NoobFAQ</strong> é um espaço colaborativo para estudantes, freelancers e criadores compartilharem
+          experiências, fazerem perguntas e darem feedback. Aqui, ninguém precisa saber tudo — o importante é aprender,
+          trocar
+          ideias e ajudar a comunidade a crescer.</p>
+
      <ul>
           <li>Postar dúvidas e perguntas sobre freelancers, projetos ou qualquer outro tema.</li>
           <li>Comentar e dar feedback nas perguntas e respostas da comunidade.</li>
           <li>Acompanhar status de ideias ou projetos compartilhados por outros usuários.</li>
           <li>Participar de uma comunidade amigável que valoriza aprendizado e colaboração.</li>
      </ul>
-     <p>O projeto é construído usando GitHub Pages e tecnologias web simples. Cada comentário é uma oportunidade de
-          aprender
-          ou ajudar alguém — porque todos começamos como noobs!</p>
-     <p>Junte-se à comunidade e faça parte do NoobFAQ!</p>
 
+     <p>O projeto é construído usando <strong>GitHub Pages</strong> e tecnologias web simples. Cada comentário é uma
+          oportunidade de aprender ou ajudar alguém — porque todos começamos como <em>noobs</em>!</p>
 
-
+     <p><strong>Junte-se à comunidade e faça parte do NoobFAQ!</strong></p>
 
      <!-- Seção de comentários -->
      <div id="comments"></div>
-
-
-
 
      <!-- Script do Utterances -->
      <script src="https://utteranc.es/client.js" repo="devgbr86/comments" issue-term="pathname" label="comentário"
           theme="github-light" crossorigin="anonymous" async>
           </script>
 
+     <footer>
+          <p>© 2025 NoobFAQ — ❤️ por <a href="https://github.com/devgbr86" target="_blank">@devgbr86</a></p>
+     </footer>
 </body>
 
 </html>
